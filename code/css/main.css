@@ -1,3 +1,32 @@
 body {
   font-family: Palatino;
 }
+
+#form-wrapper {
+  display:flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#form-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+#reading-list-container {
+  justify-content: center;
+  text-align: center;
+}
+
+#reading-list > li {
+  list-style: none;
+  background-color: pink;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 2px solid purple; 
+}
