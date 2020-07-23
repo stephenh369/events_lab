@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const handleFormSubmit = (event) => {
   event.preventDefault();
 
+  console.log(event);
+
   const title = this.title.value;
   const author = this.author.value;
   const category = this.category.value;
@@ -20,5 +22,8 @@ const handleFormSubmit = (event) => {
   const newListItem = document.createElement("li");
   newListItem.textContent = `${title} | ${author} | ${category}`;
   readingList.appendChild(newListItem);
+
+  const form = document.querySelector("#new-item-form");
+  form.reset();
 };
 
